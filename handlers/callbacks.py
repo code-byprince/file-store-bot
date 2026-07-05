@@ -40,7 +40,7 @@ async def open_file_cb(update: Update, context: ContextTypes.DEFAULT_TYPE):
                 InlineKeyboardButton("🗑 Delete", callback_data=f"del_{code}", style="danger"),
             ]
         )
-    buttons.append([InlineKeyboardButton("⬅️ Back", callback_data="myfiles_0", style="primary")])
+    buttons.append([InlineKeyboardButton("⬅️ Back", callback_data="myfiles_0", style="danger")])
     await query.edit_message_text(
         text, reply_markup=InlineKeyboardMarkup(buttons), disable_web_page_preview=True
     )
