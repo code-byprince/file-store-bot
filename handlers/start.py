@@ -36,7 +36,7 @@ def main_menu_markup():
              InlineKeyboardButton("⭐ Favorites", callback_data="favs_0", style="success")],
             [InlineKeyboardButton("🕒 Recent Uploads", callback_data="recent_0", style="primary"),
              InlineKeyboardButton("🔎 Search", callback_data="search_hint", style="primary")],
-            [InlineKeyboardButton("ℹ️ About", callback_data="about", style="primary"),
+            [InlineKeyboardButton("ℹ️ About", callback_data="about", style="danger"),
              InlineKeyboardButton("❓ Help", callback_data="help", style="primary")],
         ]
     )
