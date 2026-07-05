@@ -1,0 +1,24 @@
+services:
+  - type: web
+    name: file-storage-bot
+    env: python
+    plan: free
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python3 main.py"
+    envVars:
+      - key: BOT_TOKEN
+        sync: false
+      - key: MONGO_URI
+        sync: false
+      - key: DB_NAME
+        value: FileStoreBot
+      - key: DB_CHANNEL
+        sync: false
+      - key: ADMINS
+        sync: false
+      - key: FORCE_SUB_CHANNELS
+        value: ""
+      - key: BOT_USERNAME
+        sync: false
+      - key: PORT
+        value: "8080"
